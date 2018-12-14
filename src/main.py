@@ -23,7 +23,7 @@ def makeFile(filename, srcpath, despath):
         words = line.split()
         codeNumber = LineCode.lineCode(words)
         if(len(words) > 0):
-            des.writelines(exegete(line, codeNumber))
+            des.write(exegete(line, codeNumber))
 
 filename = input("\nEnter your filename: ")
 srcpath = input("Enter your source file path blow:\
